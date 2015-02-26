@@ -30,3 +30,4 @@ Public domain: [http://unlicense.org](http://unlicense.org)
 ## Acknowledgements ##
 
 Thanks to codepen.com for many kool ideas!
+Thanks to http://www.colourlovers.com for the beautifull color palettes
