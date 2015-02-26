@@ -9,11 +9,11 @@ Just copy and paste the styles in your stylesheet. Copy this html code and repla
 <a href="#_" class="resaltado overflowBox" id="fl1">
 <div class = "boxResaltado">
 YOUR HTML
-</ div>
+</div>
 </a>
 </code>
 
-You can add more links to the menu.
+##You can add more links to the menu.##
 Just add more id (# fl4) to your links: id = "FL5" id = "fl6" and so on.
 
 Similarly, do it in the <code>href="#FL5"</code> on the links.
