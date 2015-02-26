@@ -1,0 +1,133 @@
+/* definine colors */
+/* colors thanks to http://www.colourlovers.com */
+
+$greenpastel: #E3EDDA;
+$beige: #E8D8C3;
+$skin: #EBB198;
+$skindark: #D48079;
+$blackcherry: #783D49;
+$white: #FFFFFF;
+$black: #000000;
+$grey: #333;
+body{
+	background:$greenpastel;
+	margin:0;
+	padding:0;
+}
+/** fonts */ 
+h1, h2, h3, p, span, a{
+	font-family: 'Prata', serif;
+}
+header{
+	section.mytitle{
+		background:$blackcherry;
+		padding: 20px 0;
+		text-align: center;
+		border-bottom: $skindark 10px solid;
+		h2{
+			color:$white;
+			font-size: 2em;
+		}
+	}	
+	nav{
+		background:$beige;
+		display:block;
+		padding: 10px 0;
+		/** link list */
+		div.btn-group{
+			text-align: center;
+			a.btn-default{
+				color: $blackcherry;
+				text-transform: capitalize;
+				padding:5px 12px;
+				display: inline-block;
+				text-decoration: none;
+				&:hover{
+					background:$blackcherry;
+					color: $white;
+				}
+			}
+		}
+	}
+}
+
+a.resaltado {
+	/** Esconde el contenido */ 
+		display: none;
+
+		opacity: 0;
+		/** marca la posición */ 
+		position: fixed; 
+		z-index: 999; 
+		width: 100%; 
+		height: 100%; 
+		text-align: center; 
+		top: 0; 
+		left: 0; 
+		background: rgba(120,61,73,0.8);
+
+			div.boxResaltado { 
+				max-width: 75%; 
+				max-height: 80%; 
+				overflow: scroll;
+				margin-right: auto; 
+				margin-left: auto; 
+				margin-top: 2%; 
+				background: white; 
+				padding: 15px; 
+				display: inline-block;
+
+				h2{color: $blackcherry;}
+
+				.txtSpace{
+					p{
+						color: $grey;
+						font-size: 12px;
+						text-align: justify;
+					}
+				}
+		}
+}
+
+/*ANIMATION KEYFRAMES*/
+
+@-webkit-keyframes muestrate{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@keyframes muestrate{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+a.resaltado:target { 
+	/** hide the browser outline */ 
+	outline: none; 
+	/** show the lightbox **/ 
+	display: block; 
+	
+	/*ANIMACIONES*/
+		
+		animation: muestrate 3s infinite ease-in-out;
+		-webkit-animation: muestrate 3s infinite; /* Safari and Chrome */
+		animation-direction:alternate;
+		/*animation-delay:3s;*/
+		/*-webkit-animation-delay:3s;*/
+		-webkit-animation-direction:alternate;
+		-webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+		animation-iteration-count: 1;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation-fill-mode: forwards;
+}
+
+.bg_white_opacidad {
+
+}
