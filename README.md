@@ -17,7 +17,7 @@ YOUR HTML
 </code>
 
 ##You can add more links to the menu.##
-Just add more id (# fl4) to your links: id = "FL5" id = "fl6" and so on.
+Just add more id (# fl4) to your links: id="fl5", id = "fl6" and so on.
 
 Similarly, do it in the <code>href="#FL5"</code> on the links.
 
