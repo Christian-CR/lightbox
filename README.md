@@ -5,12 +5,15 @@ No js box and responsive, special lightbox to your projects and do not want to u
 ## Use ##
 
 Just copy and paste the styles in your stylesheet. Copy this html code and replace what's inside:
+<br>
 <code> a href="#_" class="resaltado overflowBox" id="fl1" </code>
+<br>
 <code> div class = "boxResaltado" </code>
 YOUR HTML
 <code>
-</div>
-</a>    
+/div
+<br>
+/a    
 </code>
 
 ##You can add more links to the menu.##
